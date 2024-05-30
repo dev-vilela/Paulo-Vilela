@@ -1,0 +1,700 @@
+/* ----- Reset ----- */
+*{
+    box-sizing:border-box;
+    font-family:"Poppins", sans-serif;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#717172;
+}
+
+p{
+    line-height:1.8;
+}
+
+/* ----- Cores ----- */
+:root{
+    --cor-principal:#5271ff; 
+}
+
+/* ----- Containers ----- */
+.beneficios-container,
+.motivos-container,
+.servicos-container,
+.portfolio-container,
+.workflow-container,
+.contato-container{
+    margin-bottom:50px;
+}
+
+/* ----- Boxes ----- */
+.header-box,
+.home-box,
+.beneficios-box,
+.servicos-box,
+.motivos-box,
+.portfolio-box,
+.workflow-box,
+.contato-box{
+    max-width:1200px;
+    margin:0 auto;
+    padding:30px 50px;
+}
+
+/* ----- Títulos -----*/
+.home-titulo,
+.servicos-titulo,
+.beneficios-titulo,
+.motivos-titulo,
+.portfolio-titulo,
+.workflow-titulo,
+.contato-titulo{
+    font-size:2rem;
+}
+
+.portfolio-texto{
+    text-align:center;
+    margin:20px auto 0;
+    max-width:950px;
+}
+
+.beneficios-titulo,
+.servicos-titulo,
+.motivos-titulo,
+.portfolio-titulo,
+.workflow-titulo{
+    text-align:center;
+}
+
+
+/* ----- Header ----- */
+.header-container{
+    position:absolute;
+    width:100%;
+}
+
+.header-box{
+    display:flex;
+    justify-content:space-between;
+}
+
+.header-logo-box{
+    display:flex;
+    gap:15px;
+}
+
+.header-logo-nome{
+    align-self:center;
+    background:linear-gradient(270deg, #5271FF 0.95%, #6BBAFF 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-size:1.5rem;
+    text-transform:uppercase;
+}
+
+.header-logo{
+    height:35px;
+    color:#fff;
+    stroke:#5271FF !important;
+}
+
+.header-categorias-box{
+    align-items:center;
+    display:flex;
+}
+
+.header-categorias{
+    display:flex;
+    font-weight:bold;
+    gap:40px;
+    list-style:none;
+    text-transform:uppercase;
+}
+
+.header-categoria-link{
+    text-decoration:none;
+    background:linear-gradient(270deg, #1141BD 0.95%, #6BBAFF 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.header-categoria-link::after{
+    content:'';
+    display:block;
+    height:3px;
+    margin-top:3px;
+    transition:.5s;
+}
+
+.header-categoria-link:hover::after{
+    background:linear-gradient(270deg, #1141BD 0.95%, #6BBAFF 100%);
+}
+
+/* ----- Header (mobile) ----- */
+.header-menu-rwd-btn{
+    display:none;
+}
+
+
+/* ----- Home ----- */
+.home-container{
+    display:flex;
+    align-items:center;
+    height:100vh;
+}
+
+.home-box{
+    display:flex;
+    gap:30px;
+    justify-content:space-between;
+}
+
+.home-conteudo{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:50%;
+}
+
+.home-texto{
+    font-size:1.1rem;
+    margin-top:20px;
+}
+
+.home-btn{
+    background:var(--cor-principal);
+    border:transparent;
+    border-radius:5px;
+    cursor:pointer;
+    display:flex;
+    font-size:1rem;
+    margin-top:20px;
+    width:140px;
+}
+
+.home-btn-link{
+    color:#fff;
+    font-weight:bold;
+    height:100%;
+    padding:13px;
+    text-decoration:none;
+    width:100%;
+}
+
+.home-img{
+    height:auto;
+    width:400px;
+}
+
+
+/* ----- Benefícios ----- */
+.beneficios-conteudo{
+    align-items:center;
+    display:flex;
+    justify-content:space-between;
+    margin:30px auto 0;
+    width:100%;
+}
+
+.beneficios-itens{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+    margin:0 auto;
+    max-width:1000px;
+}
+
+.beneficio-item{
+    background: #fff;
+    border-radius:10px;
+    filter:drop-shadow(0 1px 2px #000);
+    padding:30px 20px;
+    text-align:center;
+    width:400px;
+}
+
+.beneficios-img{
+    border-radius:10px;
+    filter:drop-shadow(0 0 5px #eee);
+    height:80px;
+}
+
+.beneficio-item-subtitulo{
+    font-size:1.2rem;
+    margin-bottom:5px;
+}
+
+
+/* ----- Motivos ----- */
+.motivos-conteudo{
+    align-items:center;
+    display:flex;
+    justify-content:space-between;
+    margin:30px auto 0;
+    width:100%;
+}
+
+.motivos-itens{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    gap:30px;
+    justify-content:center;
+    margin:0 auto;
+    max-width:1000px;
+}
+
+.motivo-item{
+    background: #fff;
+    border-radius:10px;
+    display:flex;
+    filter:drop-shadow(0 1px 2px #000);
+    gap:40px;
+    padding:40px;
+    max-width:800px;
+}
+
+.motivo-item-textos{
+    align-items:flex-start;
+    display:flex;
+    flex-direction:column;
+}
+
+.motivo-img{
+    align-self:center;
+    filter:drop-shadow(0 0 5px #eee);
+    height:80px;
+}
+
+.motivo-item-subtitulo{
+    font-size:1.2rem;
+    margin-bottom:5px;
+}
+
+
+/* ----- Serviços ----- */
+.servicos-itens{
+    display:flex;
+    gap:25px;
+    margin-top:20px;
+}
+
+.servico-item{
+    align-items:center;
+    background:#fff;
+    border-radius:10px;
+    display:flex;
+    filter:drop-shadow(0 1px 2px #000);
+    flex-direction:column;
+    gap:10px;
+    margin:0 auto;
+    max-width:400px;
+    padding:30px;
+    width:100%;
+}
+
+.servico-item-img{
+    filter:drop-shadow(2px 2px 2px #eee);
+    height:100px;
+}
+
+.servico-item-subtitulo{
+    font-size:1.2rem;
+    text-align:center;
+}
+
+.servico-item-texto{
+    text-align:center;
+}
+
+
+/* ----- Portfolios ----- */
+.portfolio-itens{
+    display:flex;
+    flex-wrap:wrap;
+    gap:80px; 
+    justify-content:center;
+    margin-top:50px;
+    width:100%;
+}
+
+.portfolio-item{
+    cursor:pointer;
+    max-width:400px;
+}
+
+.portfolio-item-img{
+    border-radius:5px;
+    filter: drop-shadow(2px 4px 6px #000);
+    width:100%;
+    max-width:400px;
+}
+
+.portfolio-item-img:hover {
+    filter: drop-shadow(2px 4px 6px var(--cor-principal));
+}
+
+.github-link {
+    margin: 0 auto;
+    padding-top: 95px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+   text-align: center;
+}
+
+.github-link a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    background-color: #bb0f0f;
+    width: 290px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 2.4s;
+}
+
+.github-link a:hover{
+    background-color: #1b1646;
+    transform: scale(1.2);
+}
+
+
+/* ----- Workflow ----- */
+.workflow-itens{
+    display:flex;
+    flex-wrap:wrap;
+    gap:50px;
+    margin-top:40px;
+}
+
+.workflow-item{
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    margin:0 auto;
+    text-align:center;
+    width:230px;
+}
+
+.workflow-item-numero{
+    align-items:center;
+    background:var(--cor-principal);
+    border-radius:5px;
+    color:#fff;
+    display:flex;
+    font-size:1.5rem;
+    justify-content:center;
+    height:50px;
+    width:50px;
+}
+
+
+/* ----- Contatos ----- */
+.contato-titulo{
+    text-align:center;
+}
+
+.contato-conteudo{
+    display:flex;
+    justify-content:space-between;
+    margin:40px auto 0;
+    
+}
+
+.contato-form{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    gap:20px;
+    width:60%;
+}
+
+.contato-form-input{
+    background:transparent;
+    border:1px solid #cecece;
+    border-radius:5px;
+    font-family:"Poppins", sans-serif;
+    padding:15px;
+    width:100%;
+}
+
+.contato-form-text{
+    background:transparent;
+    border:1px solid #cecece;
+    border-radius:5px;
+    font-family:"Poppins", sans-serif;
+    padding:15px;
+    resize:none;
+    width:100%;
+}
+
+.contato-form-btn{
+    background:var(--cor-principal);
+    border:none;
+    border-radius:5px;
+    color:#fff;
+    cursor:pointer;
+    font-family: "Poppins", sans-serif;
+    font-size:1rem;
+    font-weight:bold;
+    padding:15px;
+    text-transform:uppercase;
+    width:150px;
+}
+
+.contato-form-btn:hover {
+    background-color: var(--cor-principal);
+}
+
+.contato-itens{
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    height:375px;
+    justify-content:center;
+    width:35%;
+}
+
+.contatos-item{
+    background: var(--cor-fundo);
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    align-items: center;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    height: fit-content;
+    padding:30px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.contatos-item:hover{
+    background-color:#5271ff12;
+    color:#000;
+}
+
+.contatos-img{
+    height:39px;
+}
+
+
+/* ----- Footer ----- */
+.footer-container{
+    background:var(--cor-principal);
+    color:#fff;
+}
+
+.footer-box{
+    text-align:center;
+    max-width:1150px;
+    margin:0 auto;
+    padding:20px;
+}
+
+
+/* ----- Header ----- */
+@media(max-width:420px){
+    .header-logo{
+        display:none;
+    }
+}
+
+/* ----- Boxes, Header, Contato ----- */
+@media(max-width:500px){
+    .header-box,
+    .home-box,
+    .beneficios-box,
+    .servicos-box,
+    .motivos-box,
+    .portfolio-box,
+    .workflow-box,
+    .contato-box{
+        padding:30px !important;
+    }
+
+    .header-menu-rwd-btn{
+        right:24px !important;
+    }
+
+    .contato-itens{
+        align-items:center;
+        flex-direction:column !important;
+        gap:30px;
+    }
+}
+
+/* ----- Motivos, Contatos ----- */
+@media(max-width:650px){
+    .motivo-item{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .motivo-item-textos{
+        align-items:center;
+        text-align:center;
+    }
+
+    .contatos-item{
+        border:none;
+        max-width:250px;
+        padding:0;
+    }
+}
+
+/* ----- Header, Home, Servicos, Workflow*/
+@media(max-width:890px){
+    /* ----- Home ----- */
+    .home-container{
+        margin-bottom:70px;
+    }
+
+    .home-box{
+        align-items:center;
+        flex-direction:column;
+    }
+
+    .home-conteudo{
+        align-items:center;
+        text-align:center;
+        width:100%;
+    }
+
+    .home-img{
+        max-width:100%;
+    }
+
+
+    /* ----- Servicos ----- */
+    .servicos-itens{
+        flex-direction:column;
+    }
+
+    .servico-item{
+        margin:0 auto;
+        max-width:600px;
+    }
+
+
+    /* ----- Workflow ----- */
+    .workflow-items{
+        justify-content:center;
+    }
+
+
+     /* ----- Contato ----- */
+     .contato-conteudo{
+        flex-direction:column-reverse;
+        gap:50px;
+    }
+
+    .contato-form{
+        width:100%;
+    }
+
+    .contato-form-btn{
+        margin:0 auto;
+    }
+
+    .contato-itens{
+        flex-direction:row;
+        height:auto;
+        margin:0 auto;
+        width:100%;
+    }
+}
+
+/* ----- WorkFlow----- */
+@media(min-width:890px) and (max-width:1170px){
+    .workflow-item{
+        width:350px;
+    }
+}   
+
+/* ----- Benefícios ----- */
+@media(max-width:986px){
+    .beneficio-item{
+        max-width:350px;
+        width:100%;
+    }
+}
+
+/* ----- Header, Home ----- */
+@media(max-width:1040px){
+      /* ----- Scroll ----- */
+      .scroll-escondido{
+        overflow:hidden;
+    }
+
+    .scroll-visivel{
+        overflow:auto;
+    }
+
+
+    /* ----- Header ----- */
+    .header-container{
+        position:relative;
+        z-index:50;
+    }
+
+    .header-categorias-box{
+        display:inline;
+        left:0;
+        position:absolute;
+        opacity:0;
+        top:0;
+        transform:translateX(-100%);
+        transition:all 1s;
+        width:100%;
+    }
+
+    .header-categorias{
+        align-items:center;
+        background:#5271ff1a;
+        flex-direction:column;
+        gap:20px;
+        height:100vh;
+        justify-content:center;
+    }
+    
+    .header-categoria-link{
+        background:none;
+        color:#1141bd;
+        font-size:1.2rem;
+        -webkit-text-fill-color:initial;
+    }
+
+    .header-menu-rwd-btn{
+        cursor:pointer;
+        display:inline;
+        height:50px;
+        position:absolute;
+        right:44px;
+        top:24px;
+        z-index:100;
+    }
+
+    .header-menu-visivel{
+        backdrop-filter:blur(10px);
+        opacity:1;
+        transform:translateX(0);
+    }
+
+
+    /* ----- Home ----- */
+    .home-container{
+        height:auto;
+    }
+}
