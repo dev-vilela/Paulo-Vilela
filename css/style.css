@@ -8,12 +8,25 @@
 }
 
 body{
-    background-color:#717172;
+    background-color:#ddddf8;
 }
 
 p{
     line-height:1.8;
 }
+
+
+
+/*
+
+.background{
+    background-image: url('../img/background2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+} */
 
 /* ----- Cores ----- */
 :root{
@@ -186,11 +199,13 @@ p{
 
 .home-img{
     height:auto;
-    width:400px;
+    width:500px;
+    left: 50px;
+    
 }
 
 
-/* ----- Benefícios ----- */
+/* ----- Skills ----- */
 .beneficios-conteudo{
     align-items:center;
     display:flex;
@@ -229,51 +244,72 @@ p{
 }
 
 
-/* ----- Motivos ----- */
-.motivos-conteudo{
-    align-items:center;
-    display:flex;
-    justify-content:space-between;
-    margin:30px auto 0;
-    width:100%;
+
+/*--------FORMAÇÕES-------------*/
+.resume{
+    background-attachment: fixed;
+    width: 100%;
+    padding: 100px 0;
+   
 }
 
-.motivos-itens{
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    gap:30px;
-    justify-content:center;
-    margin:0 auto;
-    max-width:1000px;
-}
 
-.motivo-item{
-    background: #fff;
-    border-radius:10px;
-    display:flex;
-    filter:drop-shadow(0 1px 2px #000);
-    gap:40px;
-    padding:40px;
-    max-width:800px;
-}
+ .section-title h2 {
+    color: #000000;
+    font-size: 40px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
 
-.motivo-item-textos{
-    align-items:flex-start;
-    display:flex;
-    flex-direction:column;
+  .section-title p{
+    color: #000000;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 19px;
+    margin-bottom: 40px;
+    text-align: left;
+    text-indent: 25px;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #418530;
+    position: relative;
+    margin-left: 120px;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+.resume-item ul li, em{
+    color: #030e3f;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #ad7676;
+    border: 2px solid #1f9773;
+  }
+  
+  /*-----------FIMM FORMAÇÕES---------------*/
 
-.motivo-img{
-    align-self:center;
-    filter:drop-shadow(0 0 5px #eee);
-    height:80px;
-}
-
-.motivo-item-subtitulo{
-    font-size:1.2rem;
-    margin-bottom:5px;
-}
 
 
 /* ----- Serviços ----- */
@@ -312,7 +348,7 @@ p{
 }
 
 
-/* ----- Portfolios ----- */
+/* ----- Projetos ----- */
 .portfolio-itens{
     display:flex;
     flex-wrap:wrap;
@@ -407,53 +443,9 @@ p{
     display:flex;
     justify-content:space-between;
     margin:40px auto 0;
-    
+  
 }
 
-.contato-form{
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    gap:20px;
-    width:60%;
-}
-
-.contato-form-input{
-    background:transparent;
-    border:1px solid #cecece;
-    border-radius:5px;
-    font-family:"Poppins", sans-serif;
-    padding:15px;
-    width:100%;
-}
-
-.contato-form-text{
-    background:transparent;
-    border:1px solid #cecece;
-    border-radius:5px;
-    font-family:"Poppins", sans-serif;
-    padding:15px;
-    resize:none;
-    width:100%;
-}
-
-.contato-form-btn{
-    background:var(--cor-principal);
-    border:none;
-    border-radius:5px;
-    color:#fff;
-    cursor:pointer;
-    font-family: "Poppins", sans-serif;
-    font-size:1rem;
-    font-weight:bold;
-    padding:15px;
-    text-transform:uppercase;
-    width:150px;
-}
-
-.contato-form-btn:hover {
-    background-color: var(--cor-principal);
-}
 
 .contato-itens{
     border-radius:5px;
@@ -503,11 +495,29 @@ p{
     padding:20px;
 }
 
+/*-----------BOTÃO------------*/
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #2b28bd;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 22px;
+}
+/*-----------FIM-BOTÃO------------*/
+
 
 /* ----- Header ----- */
 @media(max-width:420px){
     .header-logo{
         display:none;
+       
     }
 }
 
@@ -522,7 +532,19 @@ p{
     .workflow-box,
     .contato-box{
         padding:30px !important;
+       
     }
+    .section-title h2{
+        font-size: 30px;
+        width: 50%;
+    }
+
+    .section-title p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
 
     .header-menu-rwd-btn{
         right:24px !important;
@@ -559,17 +581,20 @@ p{
     /* ----- Home ----- */
     .home-container{
         margin-bottom:70px;
+       
     }
 
     .home-box{
         align-items:center;
         flex-direction:column;
+        
     }
 
     .home-conteudo{
         align-items:center;
         text-align:center;
         width:100%;
+        
     }
 
     .home-img{
@@ -615,6 +640,8 @@ p{
         width:100%;
     }
 }
+
+
 
 /* ----- WorkFlow----- */
 @media(min-width:890px) and (max-width:1170px){
